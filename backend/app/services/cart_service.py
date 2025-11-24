@@ -67,5 +67,5 @@ def get_cart_details(self, cart_data: Dict[int, int]) -> CartResponse:
             total_price += subtotal
             total_items += quantity
     
-    return CartResponse(items=cart_items, total=round(total_price)
+    return CartResponse(items=cart_items, total=round(total_price),
                         items_count=total_items)
